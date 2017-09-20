@@ -20,7 +20,7 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Theme
-Plug 'nightsense/carbonized' | Plug 'fneu/breezy'
+Plug 'nightsense/carbonized'
 Plug 'itchyny/lightline.vim'
 
 Plug 'sheerun/vim-polyglot'
@@ -32,6 +32,10 @@ Plug 'elmcast/elm-vim'
 " Initialize plugin system
 call plug#end()
 
+set t_Co=256 " Sets terminal to 256 colors in vim
+set t_AB=^[[48;5;%dm
+set t_AF=^[[38;5;%dm
+set termguicolors
 set background=dark
 colorscheme carbonized-dark
 
