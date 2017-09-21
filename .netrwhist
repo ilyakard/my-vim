@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/ilya/Development/json-schema-to-elm/examples/example-input-json-schemas'
-let g:netrw_dirhist_2='/Users/ilya/Development/json-schema-to-elm'
-let g:netrw_dirhist_3='/Users/ilya/Development/json-schema-to-elm/lib'
-let g:netrw_dirhist_4='/Users/ilya/Development/json-schema-to-elm'
-let g:netrw_dirhist_5='/Users/ilya/Development/json-schema-to-elm/lib'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/ilya/Development/roster/config'
+let g:netrw_dirhist_2='/Users/ilya/Development/bim'
+let g:netrw_dirhist_3='/Users/ilya/Development/bim/app'
+let g:netrw_dirhist_4='/Users/ilya/Development/bim/app/controllers'
+let g:netrw_dirhist_5='/Users/ilya/Development/json-schema-to-elm'
+let g:netrw_dirhist_6='/Users/ilya/Development/json-schema-to-elm/lib'
+let g:netrw_dirhist_7='/Users/ilya/Development/json-schema-to-elm'
+let g:netrw_dirhist_8='/Users/ilya/Development/json-schema-to-elm/lib'
+let g:netrw_dirhist_9='/Users/ilya/Development/json-schema-to-elm/lib/printers'
