@@ -34,12 +34,15 @@ Plug 'frost/vim-eh-docs'
 Plug 'elmcast/elm-vim'
 call plug#end()
 
-" Theme
+" General Settings
 set encoding=utf8
-set t_Co=256 " Sets terminal to 256 colors in vim
+set noshowmode
+filetype plugin indent on
+
+" Theme
+" set t_Co=256 " Sets terminal to 256 colors in vim
 set termguicolors
 set background=dark
-set noshowmode
 set number
 colorscheme carbonized-dark
 let g:airline_powerline_fonts = 1
@@ -52,6 +55,9 @@ let g:alchemist_tag_disable = 1
 
 " Gitgutter
 set updatetime=250
+
+" Eh docs
+let g:ehdocs_lookup_command = 'mix eh | most'
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -70,6 +76,10 @@ nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
+
+" EasyAlign
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " Key mappings
 inoremap jk <ESC>
