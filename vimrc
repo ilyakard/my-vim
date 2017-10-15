@@ -56,9 +56,6 @@ let g:alchemist_tag_disable = 1
 " Gitgutter
 set updatetime=250
 
-" Eh docs
-let g:ehdocs_lookup_command = 'mix eh | most'
-
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
