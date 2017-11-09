@@ -7,8 +7,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'skywind3000/asyncrun.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 
 " Theme
 Plug 'nightsense/carbonized'
@@ -28,7 +30,6 @@ Plug 'slashmili/alchemist.vim'
 Plug 'avdgaag/vim-phoenix'
 Plug 'mmorearty/elixir-ctags'
 Plug 'mattreduce/vim-mix'
-Plug 'frost/vim-eh-docs'
 
 " Elm
 Plug 'elmcast/elm-vim'
@@ -38,6 +39,15 @@ call plug#end()
 set encoding=utf8
 set noshowmode
 filetype plugin indent on
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set autochdir
+
+" Key mappings
+inoremap jk <ESC>
+map <SPACE> <leader>
+vnoremap . :norm.<CR>
 
 " Theme
 " set t_Co=256 " Sets terminal to 256 colors in vim
@@ -78,10 +88,6 @@ nmap <silent> <leader>g :TestVisit<CR>
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
-" Key mappings
-inoremap jk <ESC>
-map <SPACE> <leader>
-map <C-n> :NERDTreeToggle<CR>
-
 " NERDTree setup
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
