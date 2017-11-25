@@ -3,10 +3,11 @@
 " - Avoid using standard Vim directory names like 'plugin' 
 call plug#begin('~/.vim/plugged') 
 Plug 'junegunn/vim-easy-align'
-Plug 'airblade/vim-gitgutter'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -42,7 +43,6 @@ filetype plugin indent on
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-set autochdir
 
 " Key mappings
 inoremap jk <ESC>
@@ -91,3 +91,4 @@ nmap ga <Plug>(EasyAlign)
 " NERDTree setup
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinSize = 40
